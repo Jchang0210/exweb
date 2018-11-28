@@ -14,11 +14,11 @@
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse navbar-ex1-collapse">
 			<ul class="nav navbar-nav">
-				<li class="{{ Request::is('/') ? "active" : "" }}"><a href="/">Home</a></li>
-				<li class="{{ Request::is('category') ? "active" : "" }}"><a href="/category">Categories</a></li>
-				<li class="{{ Request::is('question') ? "active" : "" }}"><a href="/question">Questions</a></li>
-				<li class="{{ Request::is('exam') ? "active" : "" }}"><a href="/exam">Exam</a></li>
-				<li class="{{ Request::is('practice') ? "active" : "" }}"><a href="/practice">Practice</a></li>
+				<li class="{{ Request::is('/') ? "active" : "" }}"><a href="/exweb">Home</a></li>
+				<li class="{{ Request::is('category') ? "active" : "" }}"><a href="/exweb/category">Categories</a></li>
+				<li class="{{ Request::is('question') ? "active" : "" }}"><a href="/exweb/question">Questions</a></li>
+				<li class="{{ Request::is('exam') ? "active" : "" }}"><a href="/exweb/exam">Exam</a></li>
+				<li class="{{ Request::is('practice') ? "active" : "" }}"><a href="/exweb/practice">Practice</a></li>
 			</ul>
 
 			<ul class="nav navbar-nav navbar-right">
@@ -28,7 +28,7 @@
 			@else
 				<li class="dropdown">
 
-					<a href="/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="flase">Hello {{ Auth::user()->name }} <span class="caret"></span></a>
+					<a href="/exweb" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="flase">Hello {{ Auth::user()->name }} <span class="caret"></span></a>
 
 					<ul class="dropdown-menu">
 						<li>
